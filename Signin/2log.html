@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="sto.css">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="2log.js"</script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Registration Form
+        </div>
+        <div class="form">
+            <form onsubmit="return validateForm()" method="POST" action="2enter.php">
+                <div class="inputfield">
+                    <label>First Name</label>
+                    <input id="first-name" name="first_name" type="text" class="input">
+                </div>  
+                <div class="inputfield">
+                    <label>Last Name</label>
+                    <input id="last-name"  name="last_name" type="text" class="input">
+                </div> 
+
+                <div class="inputfield">
+                    <div class="custom_select">
+                        <label for="date_naissance">Date de naissance:</label>
+                        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+                    </div>
+                </div> 
+
+                <div class="inputfield">
+                    <label><br>Phone Number</label>
+                    <input id="phone-number" type="text" class="input" name="Phone">
+                </div> 
+                <div class="inputfield">
+                    <label>Address</label>
+                    <textarea id="address" class="textarea" name="Address"></textarea>
+                </div> 
+                <div class="inputfield">
+                    <label>Postal Code</label>
+                    <input id="postal-code" type="text" class="input" name="postal">
+                </div> 
+                
+                <div class="inputfield">
+                  <label>Newsletter</label>
+                  <input id="newsletter" type="checkbox" name="newsletter" onchange="toggleNewsletter()">
+                </div>
+
+                <div class="inputfield terms">
+                    <label class="check">
+                        <input id="terms-checkbox" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+
+                <div class="inputfield">
+                    <button type="submit" name="submit" >Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

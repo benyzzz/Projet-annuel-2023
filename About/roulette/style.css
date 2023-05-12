@@ -1,0 +1,96 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  /* Thank you: https://uigradients.com */
+  background: #7f7fd5; /* couleur de fond pour les anciens navigateurs */
+  background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'helvetica', sans-serif;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.spinner, .spinner__won {
+  position: relative;
+  overflow-x: hidden;
+  background-color: white;
+  box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.spinner {
+  max-width: 610px;
+  min-width: 610px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.spinner__won {
+  max-width: 590px;
+  min-width: 590px;
+  padding: 3px 10px;
+  font-size: 24px;
+  letter-spacing: 12px;
+  color: #333; /* couleur du texte */
+  background-color: #9c9c9c; /* couleur de fond pour les éléments gagnants */
+}
+
+.spinner-items {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  margin-left: -246px;
+}
+
+.spinner__marker {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: yellow; /* couleur du marqueur */
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+}
+
+.spinner-items__item {
+  display: block;
+  list-style-type: none;
+  padding: 32px 0;
+  font-size: 32px;
+  color: #c2c2c2; /* couleur du texte des éléments non gagnants */
+  border-left: 5px solid black;
+  width: 117px;
+  max-width: 117px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button {
+  padding: 21px 46px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  background-color: white;
+  transition: box-shadow 300ms ease;
+  color: #333; /* couleur du texte */
+}
+
+.button:hover {
+  box-shadow: 0px 2.5px 3.5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.win {
+  background-color: lemonchiffon; /* couleur de fond pour l'élément gagnant */
+}
+
+.spinner-items__item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
