@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Générer les pièces du puzzle
     function createPuzzlePieces() {
-      // Ici, vous pouvez ajouter un code pour récupérer l'image personnalisée depuis le backoffice
-      // (par exemple, en utilisant AJAX et PHP)
-  
+
       // Pour l'instant, nous utilisons une image statique
       const imageUrl = 'puzzle/puzzle.jpg';
       const img = new Image();
